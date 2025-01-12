@@ -1,0 +1,25 @@
+How the algorithms work:
+
+1- Quicksort: is a divide and conquer algorithm, what I mean by that is that instead of sorting the whole thing, lets 
+sort some sort of smaller array, but before that, we need to choose how we are going to choose the smaller array.
+putting that aside, lets start with a simpler concept, the pivot. The pivot is the point we sort the array around, 
+simply put, anything smaller than the pivot, goes on the left of it, anything bigger , goes on the right. After we 
+are done with that, we sort from the begginning untill the pivot, and from the pivot to the end. We do that for all 
+smaller arrays and then we merge these sorted arrays.
+
+2-MergeSort: also a divide and conquer algorith, but much simpler in concept, keep dividing the array by half untill 
+you get to the smallest possible array, then start merging them back together in order. Same merging as quicksort.
+
+3-bubbleSort: The simplest sorting algorithm. We go over each element, if it is larger than the next element, we swap them.
+
+4-InsertSort: This one I think has a nice concept. Here, we start from the second element not the first. We insert each element into
+its place, here is what I mean. Imagine you have an array and you are looping over it, you are now at the seventh index.
+Everything below the seventh index is sorted, so as long as I know it is sorted, I need to find the largest element in
+that sorted subarray that the current element is larger than, and the next element it is smaller than and "insert" 
+the element there.
+
+for example:
+
+arr= [1,5,6,7,3,9,11] and you are at index 4, the element 3. Everything below that is sorted. you are trying to find
+the largest element that 3 is larger than, and the smallest element that 3 is smaller than and insert it there.
+
